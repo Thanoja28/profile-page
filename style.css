@@ -1,17 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem
 }
 
 .banner {
+  width: 100%;
   background: #8D99AE;
-  padding: 1rem;
-  height: 100vh;
+  padding: 170px 0 170px 0;
+}
+
+.nav-links ul {
+  display: inline-flex;
+  padding: 0;
 }
 
 .nav-links {
+  text-align: center;
   text-transform: capitalize;
   position: fixed;
   top: 10px;
@@ -19,16 +25,29 @@ body {
 }
 
 .nav-links ul li {
-  display: inline;
-  background:#D8315B;
+  text-align: center;
+  background: #D8315B;
   padding: 1rem;
   list-style: none;
+}
+
+p {
+  font-size: 20px;
+}
+
+.nav-links ul li a {
+  padding-left: 0;
 }
 
  ul li a {
   color: #EDF2F4;
   padding-left: 8rem;
   text-decoration: none;
+}
+
+ul li a:hover {
+  color: #8D99AE;
+
 }
 
 .align-img-text {
@@ -45,6 +64,14 @@ img {
   filter: brightness(1);
 }
 
+.bg-image {
+  background-image: url("https://www.chrisficklingdesign.co.uk/assets/images/responsive-website-design-02-2016.png");
+  height: 300px;
+  width: 500px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 .social-icons {
   margin-top: 20px;
 }
@@ -55,18 +82,25 @@ img {
 }
 
 button {
-  text-transform: capitalize;
+  text-transform: uppercase;
   padding: 14px;
   border: none;
   background: #2b2d42;
   color: #edf2f4;
   border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
 }
 
 button:hover {
   background: #edf2f4;
   color: #2b2d42;
   transition: .3s;
+}
+
+.btn-color:hover {
+  background-color: #393b4d;
+  color: #edf2f4;
 }
 
 .margin-right {
@@ -81,7 +115,8 @@ button:hover {
 }
 
 .button1-align {
-  text-align: center;
+  text-align: right;
+  margin-left: 200px;
   margin-top: 20px;
 }
 
@@ -117,10 +152,24 @@ button:hover {
 
 .icons-color {
   color: #edf2f4;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.icons-color:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 h2 {
   text-align: center;
+}
+
+.font-weight {
+  font-weight: 700;
+}
+
+.font-weight span {
+  font-weight: 100;
 }
 
 .background-color-new {
@@ -138,12 +187,48 @@ h2 {
   margin: 10px;
 }
 
+.icon-circle-add {
+  margin: 4px 0;
+}
+
+.icon-circle-add:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  padding-right: 3px;
+}
+
 .align-designs {
   display: flex;
   flex: 0 0 50%;
 }
 
-#map {
-  position: relative;
-  width: 50%;
+.map-contact-position {
+  display: flex;
 }
+
+.footer-bg-color {
+  background-color: #8D99AE;
+  text-align: center;
+  padding: 10px;
+}
+
+.form-align {
+  background-color:  #D8315B;
+  padding: 0 250px;
+  color: #edf2f4;
+}
+
+input {
+  color:  #D8315B;
+  border: none;
+  padding: 8px;
+  margin: 6px;
+  opacity: .7;
+}
+
+.i-bg-color {
+  background-color: #edf2f4;
+  padding: 20px 0;
+}
+
+

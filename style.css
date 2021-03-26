@@ -115,7 +115,6 @@ button:hover {
 }
 
 .button1-align {
-  text-align: right;
   margin-left: 200px;
   margin-top: 20px;
 }
@@ -134,7 +133,7 @@ button:hover {
 }
 
 .margin-top {
-  margin-top: 110px;
+  margin-top: 14px;
 }
 
 .align-designs {
@@ -161,7 +160,12 @@ button:hover {
 }
 
 h2 {
+  text-transform: uppercase;
   text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
 }
 
 .font-weight {
@@ -231,7 +235,7 @@ input {
   padding: 20px 0;
 }
 
-.social-icons {
+.social-icons i {
   font-size: 30px;
 }
 

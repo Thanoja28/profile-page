@@ -143,3 +143,7 @@ h2 {
   flex: 0 0 50%;
 }
 
+#map {
+  position: relative;
+  width: 50%;
+}

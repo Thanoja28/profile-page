@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   <!-- to use google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
 </head>
 <body>
 <header class="banner">
@@ -90,21 +94,21 @@
     <a href="#" class="icons-color"><i class="fas fa-laptop-code"></i></a>
     <h3>Front-End Design</h3>
     <p>Designing is an art. Designing is an art. Designing is an art. Designing is an art.
-    Designing is an art. Designing is an art.</p>
+       Designing is an art. Designing is an art.</p>
     <button>Read More</button>
   </div>
   <div class = "background-color">
     <a href="#" class="icons-color"><i class="fas fa-tablet-alt"></i></a>
     <h3>UI-UX Design</h3>
     <p>Designing is an art. Designing is an art. Designing is an art. Designing is an art.
-    Designing is an art. Designing is an art.</p>
+       Designing is an art. Designing is an art.</p>
     <button>Read More</button>
   </div>
   <div class = "background-color">
     <a href="#" class="icons-color"><i class="fas fa-database"></i></a>
     <h3>Back-End Design</h3>
     <p>Designing is an art. Designing is an art. Designing is an art. Designing is an art.
-    Designing is an art. Designing is an art.</p>
+       Designing is an art. Designing is an art.</p>
     <button>Read More</button>
   </div>
 </section>
@@ -118,28 +122,29 @@
     <h2>Portfolio</h2>
     <h3 style="text-align: center;">Latest Designs</h3>
 <section class="align-img">
-      <img class="adjust-img"  src="images/pintag.png" alt="pintag">
-      <img class="adjust-img"  src="images/blacky.png" alt="blacky">
-      <img class="adjust-img"  src="images/pintag1.png" alt="pintag1">
-      <img class="adjust-img"  src="images/portfolio.png" alt="portfolio">
-      <img class="adjust-img"  src="images/blacky.png" alt="blacky">
-      <img class="adjust-img"  src="images/portfolio1.png" alt="portfolio1">
+  <img class="adjust-img"  src="images/pintag.png" alt="pintag">
+  <img class="adjust-img"  src="images/blacky.png" alt="blacky">
+  <img class="adjust-img"  src="images/pintag1.png" alt="pintag1">
+  <img class="adjust-img"  src="images/portfolio.png" alt="portfolio">
+  <img class="adjust-img"  src="images/blacky.png" alt="blacky">
+  <img class="adjust-img"  src="images/portfolio1.png" alt="portfolio1">
 </section>
-<section class="align-designs">
-  <div>
-    <img src="images/design.jpeg" alt="design">
-  </div>
-  <div>
+<div class="align-designs">
+    <img src="images/design.jpeg" width="400px", height="400px"  alt="design">
     <img src="images/Thano-new.jpg" alt="Thano-new">
-  </div>
-</section>
-<section>
-  <div>
-   <h1>map</h1>
-  </div>
-  <div>
+</div>
+  <div class="map-position">
+   <div id="map"></div>
     <h3>Contact Me</h3>
   </div>
-</section>
 </body>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoidGhhbm9qYSIsImEiOiJja2tzZHd1MHAxMndtMnFxbnR1ZHRxbjRzIn0.vpgkpUMtXHqlwbiI-hH_nw';
+var map = new mapboxgl.Map({
+container: 'map', // container id
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [-74.5, 40], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
+</script>
 </html>

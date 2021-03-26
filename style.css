@@ -231,4 +231,18 @@ input {
   padding: 20px 0;
 }
 
+.social-icons {
+  font-size: 30px;
+}
+
+.social-icons i:hover {
+  color: #d7d7d7;;
+}
+
+h4 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
 

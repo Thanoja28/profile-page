@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem
+  font-size: 1rem;
+  scroll-behavior: smooth;
 }
 
 .banner {
@@ -32,7 +33,7 @@ body {
 }
 
 p {
-  font-size: 20px;
+  margin: 0;
 }
 
 .nav-links ul li a {
@@ -47,7 +48,6 @@ p {
 
 ul li a:hover {
   color: #8D99AE;
-
 }
 
 .align-img-text {
@@ -185,10 +185,12 @@ h3 {
 
 .align-img {
   display: flex;
+  flex-grow: 1;
 }
 
-.adjust-img {
-  margin: 10px;
+.adjust-img:hover {
+  flex-grow: 5;
+
 }
 
 .icon-circle-add {
@@ -231,12 +233,12 @@ input {
 }
 
 .i-bg-color {
-  background-color: #edf2f4;
+  color: #edf2f4;
   padding: 20px 0;
 }
 
 .social-icons i {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .social-icons i:hover {
@@ -245,8 +247,10 @@ input {
 
 h4 {
   text-transform: uppercase;
-  margin: 0;
 }
 
+.font-size-p {
+  font-size: 18px;
+}
 
 

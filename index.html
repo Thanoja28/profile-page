@@ -12,38 +12,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <header>
   <nav class="nav-links">
     <ul>
       <li>
-        <a href=""><i class="fas fa-user"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
       </li>
       <li>
-        <a href="">home</a>
+        <a href="#">home</a>
       </li>
       <li>
-        <a href="">about</a>
+        <a href="#section1">about</a>
       </li>
       <li>
-        <a href="">portfolio</a>
+        <a href="#section2">portfolio</a>
       </li>
       <li>
-        <a href="">contact</a>
+        <a href="#section3">contact</a>
       </li>
     </ul>
   </nav>
 </header>
+
 <div class="banner">
   <div class="align-img-text">
     <div class="margin-right">
         <h1 class="font-weight"> <span>I am</span> Thanoja Thangaraja</h1>
-        <p>Full Stack Web Developer</p>
-        <p class="icon-circle-add">I am a passionate Web developer</p>
-        <p class="icon-circle-add">A long journey to travel</p>
-        <p class="icon-circle-add"> Experience makes a lot better to land</p>
+        <p class="font-size-p">Full Stack Web Developer</p>
+        <p class="icon-circle-add font-size-p">I am a passionate Web developer</p>
+        <p class="icon-circle-add font-size-p">A long journey to travel</p>
+        <p class="icon-circle-add font-size-p"> Experience makes a lot better to land</p>
         <button>Hire Me</button>
         <button class="btn-color">View Portfolio</button>
-
         <a href="/images/Thano-new.jpg" download>
         <button>Download My CV</button>
         </a>
@@ -52,7 +53,8 @@
    </div>
 </div>
 </div>
-<section class="align-button">
+
+<section class="align-button" id="section1">
   <div>
   <div class="button1-align">
     <button>about me</button>
@@ -61,6 +63,7 @@
   </div>
     <img src="images/my-photo.jpeg" class="img-size" alt="profile">
   </div>
+
   <div class="margin-top">
     <h3>My Story</h3>
     <p class="card-about">I am from India. Curently living in UK.
@@ -82,6 +85,7 @@
       Web Development</p>
   </div>
 </section>
+
 <h2>More To Know</h2>
 <section class="align-designs">
   <div class = "background-color">
@@ -91,6 +95,7 @@
        Designing is an art. Designing is an art.</p>
     <button>Read More</button>
   </div>
+
   <div class = "background-color">
     <a href="#" class="icons-color"><i class="fas fa-tablet-alt"></i></a>
     <h3>UI-UX Design</h3>
@@ -98,6 +103,7 @@
        Designing is an art. Designing is an art.</p>
     <button>Read More</button>
   </div>
+
   <div class = "background-color">
     <a href="#" class="icons-color"><i class="fas fa-database"></i></a>
     <h3>Back-End Design</h3>
@@ -106,6 +112,7 @@
     <button>Read More</button>
   </div>
 </section>
+
 <section>
   <div class="background-color-new">
     <p>Searching for a Perfect Design??</p>
@@ -113,8 +120,9 @@
     <p>Impressed, Ring Me </p>
   </div>
 </section>
-    <h2>Portfolio</h2>
-    <h3 style="text-align: center;">Latest Designs</h3>
+
+<h2 id="section2">Portfolio</h2>
+<h3 style="text-align: center;">Latest Designs</h3>
 <section class="align-img">
   <img class="adjust-img"  src="images/pintag.png" alt="pintag">
   <img class="adjust-img"  src="images/blacky.png" alt="blacky">
@@ -123,17 +131,22 @@
   <img class="adjust-img"  src="images/blacky.png" alt="blacky">
   <img class="adjust-img"  src="images/portfolio1.png" alt="portfolio1">
 </section>
- <div class="map-contact-position">
+
+<div class="map-contact-position" id="section3">
+
   <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2481.750320871823!2d0.05838581565291439!3d51.53613917963992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x47d8a6478a1aeaaf%3A0xcfb588dd8d2f2ddf!2sKempton%20Rd%2C%20East%20Ham%2C%20London%20E6%202NF!3m2!1d51.5361392!2d0.060574499999999996!4m0!5e0!3m2!1sen!2suk!4v1616756776335!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
   <div class="form-align">
+
     <h3>Contact Me</h3>
-    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-      <label for="fname">First name:</label><br>
+    <form action="mailto:thanujathanuja18@yahoo.com" method="post" enctype="text/plain">
       <input type="text" id="fname" name="fname" value="First Name"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value="Last Name">
+      <input type="text" id="lname" name="lname" value="Last Name"><br>
+      <input type="text" id="email" name="email" value="Email"><br>
+      <textarea name="comments" id="comment" cols="20" rows="5"></textarea>
       <button type= "submit">Submit</button>
     </form>
+
     <div class="social-icons">
       <h4>follow me</h4>
       <i class="fab fa-instagram-square"></i>
@@ -141,15 +154,16 @@
       <i class="fab fa-linkedin"></i>
       <i class="fab fa-slack"></i>
     </div>
+
   </div>
- </div>
-  <footer class="footer-bg-color">
+</div>
+
+  <footer class="footer-bg-color" id="section4">
     <h4>Anything to share</h4>
     <div class="i-bg-color">
       <i class="fas fa-home"></i><p>137 Kempton Road, E6 2NF</p>
       <i class="fas fa-phone-alt"></i><p>07305863436</p>
       <i class="fas fa-envelope-open"></i><p>thanujathanuja18@yahoo.com</p>
-      <p>DONE BY ME</p>
     </div>
   </footer>
 </body>
